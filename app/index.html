@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fast, accessible frontend for make.fun bounties: the live board, bounty pages, leaderboards and public profiles.">
+<title>make.fun bounties — fast frontend</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/" data-nav>make<span class="dot">.</span>fun <span class="brand-sub">bounties</span></a>
+    <nav aria-label="Main">
+      <a href="#/" data-nav>Board</a>
+      <a href="https://make.fun/bounty/makefun-frontend-01">About this bounty</a>
+    </nav>
+    <button type="button" id="refresh" class="btn ghost">Refresh</button>
+  </div>
+</header>
+<main id="app" class="wrap" tabindex="-1"></main>
+<div class="wrap statusline">
+  <p id="notice" role="status" aria-live="polite"></p>
+  <p id="updated" class="muted"></p>
+</div>
+<footer class="wrap foot">
+  <p>Read-only client for <a href="https://make.fun">make.fun</a>'s public API. No sign-in, no tracking.
+  Built for the “Build the best make.fun frontend” bounty — enter via
+  <a href="https://make.fun/r/j045936m">make.fun/r/j045936m</a>.</p>
+</footer>
+</body>
+</html>
